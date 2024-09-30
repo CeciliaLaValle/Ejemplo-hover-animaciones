@@ -1,0 +1,66 @@
+html {
+    font-size: 10px;
+}
+
+h1 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    place-content: center;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    place-content: center;
+    background-color: rgb(203, 207, 145);
+    height: 50vh;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-top: 50vh;
+}
+
+
+#contenedor-semana {
+    display: grid;
+    justify-items: center;
+
+    background-color: rgb(255, 255, 255);
+    border: 10px inset black;
+    padding: 30px;
+}
+
+#contenedor-semana:hover {
+    border-style: groove;
+    background-color: rgb(232, 233, 223);
+}
+
+.dias-semana {
+    font-size: 25px;
+    animation: entrada-texto 0.5s;
+}
+
+.dias-semana:hover {
+    color: rgb(37, 132, 227);
+    text-decoration: underline;
+    animation: salto-texto 0.3s;
+}
+
+@keyframes entrada-texto {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes salto-texto {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
